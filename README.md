@@ -1,0 +1,1 @@
+# A simple shopping list cart application made with Node.js
