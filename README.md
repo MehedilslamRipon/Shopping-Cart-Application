@@ -2,4 +2,4 @@
 
 A simple shopping list cart application made with Node.js
 
-[x] Created an express server
+- Created an express server
