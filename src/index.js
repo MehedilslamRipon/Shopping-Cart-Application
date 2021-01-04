@@ -9,6 +9,7 @@ app.use(cors());
 app.set("view engine", "ejs");
 app.set("views", path.join(__dirname, "views"));
 app.use(express.static(path.join(__dirname, "../", "public")));
+console.log(path.join(__dirname, "../", "public"));
 
 // server PORT
 const PORT = 3000;
@@ -18,15 +19,16 @@ app.get("/", (req, res) => {
    res.send("hello world");
 });
 
+// middleware
 app.use((req, res, next) => {
-   const error = new Error("404 Not Found");
+   const error = new Error();
    error.status = 404;
    next(error);
 });
 
 app.use((error, req, res, next) => {
    if (error.status === 404) {
-      res.status = 404;
+      res.status(404);
       return res.render("errors/404");
    }
 
