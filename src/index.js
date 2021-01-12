@@ -9,14 +9,13 @@ app.use(cors());
 app.set("view engine", "ejs");
 app.set("views", path.join(__dirname, "views"));
 app.use(express.static(path.join(__dirname, "../", "public")));
-console.log(path.join(__dirname, "../", "public"));
 
 // server PORT
 const PORT = 3000;
 
 // basic routes
 app.get("/", (req, res) => {
-   res.send("hello world");
+   res.send("<h1> Hello World </h1>");
 });
 
 // middleware
