@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Shopping cart application CSS Documentation</title>
+   </head>
+   <body>
+      <h2 id="documentation-of-shopping-list-html-template-css-">
+         Documentation of Shopping cart application HTML Template ( CSS )
+      </h2>
+      <p><br /></p>
+      <h3 id="variables-used-in-this-project">
+         Variables Used in This Project
+      </h3>
+      <pre><code class="lang-css"><span class="hljs-selector-pseudo">:root</span> {
+    <span class="hljs-attribute">--brand-font-family</span>: <span class="hljs-string">'Montserrat'</span>, sans-serif;
+    <span class="hljs-attribute">--text-font-family</span>: <span class="hljs-string">'Roboto'</span>, sans-serif;
+
+    <span class="hljs-attribute">--page-color</span>: <span class="hljs-number">#f5f5f5</span>;
+    <span class="hljs-attribute">--section-color</span>: <span class="hljs-number">#ffffff</span>;
+    <span class="hljs-attribute">--nav-color</span>: <span class="hljs-number">#333333</span>;
+    <span class="hljs-attribute">--nav-text-color</span>: <span class="hljs-number">#ffffff</span>;
+    <span class="hljs-attribute">--font-color</span>: <span class="hljs-number">#4242442</span>;
+    <span class="hljs-attribute">--brand-color</span>: <span class="hljs-number">#424242</span>;
+    <span class="hljs-attribute">--font-color-secondary</span>: <span class="hljs-number">#666666</span>;
+    <span class="hljs-attribute">--border-color</span>: <span class="hljs-number">#efefef</span>;
+    <span class="hljs-attribute">--table-stipe-color</span>: <span class="hljs-number">#f1f1f1</span>;
+    <span class="hljs-attribute">--table-stipe-color-success</span>: <span class="hljs-number">#eafdd0</span>;
+
+    <span class="hljs-attribute">--font-size-brand</span>: <span class="hljs-number">1.5rem</span>;
+    <span class="hljs-attribute">--font-size-text</span>: <span class="hljs-number">1rem</span>;
+    <span class="hljs-attribute">--font-size-title-sm</span>: <span class="hljs-number">1.25rem</span>;
+    <span class="hljs-attribute">--font-size-title-md</span>: <span class="hljs-number">1.5rem</span>;
+    <span class="hljs-attribute">--font-size-title-lg</span>: <span class="hljs-number">1.75rem</span>;
+
+    <span class="hljs-attribute">--completed-table-header-color</span>: <span class="hljs-number">#4a8d47</span>;
+    <span class="hljs-attribute">--completed-table-header-font-color</span>: <span class="hljs-number">#ffffff</span>;
+    <span class="hljs-attribute">--completed-table-cell-color</span>: <span class="hljs-number">#f2fde4</span>;
+}
+</code></pre>
+      <p><br /></p>
+      <h2 id="bem-blocks-classes">BEM Blocks Classes</h2>
+      <hr />
+      <p>
+         <strong>container</strong> - [Block] 60% width Container, Page
+         Container, Nav Container
+      </p>
+      <p>
+         <strong>section</strong> - [Block] for multiple section, a white
+         background empty card, no padding, no margin applied
+      </p>
+      <p>HTML Examples</p>
+      <pre><code class="lang-html">&lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"container"</span>&gt;
+    &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"section"</span>&gt;&lt;/<span class="hljs-keyword">div</span>&gt;
+&lt;/<span class="hljs-keyword">div</span>&gt;
+</code></pre>
+      <p><br /></p>
+      <h3 id="nav-blocks-elements-and-modifiers">
+         Nav Blocks, Elements and Modifiers
+      </h3>
+      <hr />
+      <p>
+         <strong>nav</strong> - [Block] 100% width main nav area with no tightly
+         coupled height, margin and padding
+      </p>
+      <p>
+         <strong>nav__container</strong> - [Element] A flex container with
+         applied 0.5rem top-bottom margin
+      </p>
+      <p><strong>nav__brand</strong> - [Element] A flex container for brand</p>
+      <p>
+         <strong>nav__brand-logo</strong> - [Element] Main brand image or logo
+      </p>
+      <p><strong>nav__brand-name</strong> - [Element] Brand Name</p>
+      <p><strong>nav__menu</strong> - [Element] Navigation Menu Container</p>
+      <p><strong>nav__menu-icon</strong> - [Element] Navigation Menu Icon</p>
+      <p>
+         <strong>nav__menu--right</strong> - [Modifier] Modifier to push
+         navigation menu to right
+      </p>
+      <p><br /></p>
+      <p>HTML Example</p>
+      <pre><code class="lang-html">&lt;nav <span class="hljs-built_in">class</span>=<span class="hljs-string">"nav __shadow--lg"</span>&gt;
+    &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"container nav__container"</span>&gt;
+        &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"nav__brand"</span>&gt;
+            &lt;img <span class="hljs-built_in">class</span>=<span class="hljs-string">"nav__brand-logo"</span> src=<span class="hljs-string">"src"</span> alt=<span class="hljs-string">"alt"</span> /&gt;
+            &lt;h1 <span class="hljs-built_in">class</span>=<span class="hljs-string">"nav__brand-name"</span>&gt;Company Name&lt;/h1&gt;
+        &lt;/<span class="hljs-keyword">div</span>&gt;
+        &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"nav__menu nav__menu--right"</span>&gt;
+            &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"nav__menu-items"</span>&gt;
+                &lt;img <span class="hljs-built_in">class</span>=<span class="hljs-string">"nav__menu-icon"</span> src=<span class="hljs-string">"src"</span> alt=<span class="hljs-string">"alt"</span> /&gt;
+            &lt;/<span class="hljs-keyword">div</span>&gt;
+        &lt;/<span class="hljs-keyword">div</span>&gt;
+    &lt;/<span class="hljs-keyword">div</span>&gt;
+&lt;/nav&gt;
+</code></pre>
+      <h3 id="add-item-block-elements-and-modifiers">
+         Add-Item Block, Elements and Modifiers
+      </h3>
+      <hr />
+      <p><strong>add-item</strong> - [Block] Main Block of add item section</p>
+      <p>
+         <strong>add-item__relative</strong> - [Element] A container for
+         relative positioned element
+      </p>
+      <p>
+         <strong>add-item__input</strong> - [Element] Input field and icon
+         container
+      </p>
+      <p>
+         <strong>add-item__icon</strong> - [Element] Image tag containing input
+         icon
+      </p>
+      <p>
+         <strong>add-item__input-field</strong> [Element] Main input field for
+         add item
+      </p>
+      <p><br /></p>
+      <p>HTML Example</p>
+      <pre><code class="lang-html">&lt;div <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"section add-item __shadow--sm"</span>&gt;
+    &lt;div <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"add-item__relative"</span>&gt;
+        &lt;div <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"add-item__input"</span>&gt;
+            &lt;img
+                <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"add-item__icon"</span>
+                src=<span class="hljs-string">"./assets/icons/plus-icon.png"</span>
+                alt=<span class="hljs-string">"Create New Bucket"</span>
+            /&gt;
+            &lt;input
+                <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"add-item__input-field"</span>
+                <span class="hljs-class"><span class="hljs-keyword">type</span></span>=<span class="hljs-string">"text"</span>
+                placeholder=<span class="hljs-string">"Create New Bucket"</span>
+            /&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+      <p><br /></p>
+      <p>
+         <strong>add-item__filter-overlay</strong> - [Element] Filter or
+         suggestion overlay container absolute positioned of
+         <code>add-item__relative</code>
+      </p>
+      <p>
+         <strong>add-item__filter-list</strong> - [Element]
+         <code>&lt;ul&gt;</code> element of filtered list
+      </p>
+      <p>
+         <strong>add-item__filter-item</strong> - [Element]
+         <code>&lt;li&gt;</code> element of filtered list
+      </p>
+      <p>
+         <strong>add-item__filter-content</strong> - [Element] main content area
+         of <code>add-item**filter-item</code>, actually a div who will contain
+         all the necessary data
+      </p>
+      <p>
+         <strong>add-item__filter-icon</strong> - [Element] Icon of the each
+         list element
+      </p>
+      <p><br /></p>
+      <p>HTML Example</p>
+      <pre><code class="lang-html">&lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"add-item"</span>&gt;
+    &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"add-item__relative"</span>&gt;
+        &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"add-item__input"</span>&gt;...&lt;/<span class="hljs-keyword">div</span>&gt;
+        &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"add-item__filter-overlay hide"</span>&gt;
+            &lt;ul <span class="hljs-built_in">class</span>=<span class="hljs-string">"add-item__filter-list"</span>&gt;
+                &lt;li <span class="hljs-built_in">class</span>=<span class="hljs-string">"add-item__filter-item"</span>&gt;
+                    &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"add-item__filter-content"</span>&gt;
+                        &lt;img
+                            <span class="hljs-built_in">class</span>=<span class="hljs-string">"add-item__filter-icon"</span>
+                            src=<span class="hljs-string">"./assets/icons/plus-icon.png"</span>
+                            alt=<span class="hljs-string">"Item"</span>
+                        /&gt;
+                        Egg
+                    &lt;/<span class="hljs-keyword">div</span>&gt;
+                &lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/<span class="hljs-keyword">div</span>&gt;
+    &lt;/<span class="hljs-keyword">div</span>&gt;
+&lt;/<span class="hljs-keyword">div</span>&gt;
+</code></pre>
+      <p>
+         <strong>add-item__suggestions</strong> - [Element] flex container for
+         all suggestions and controllers
+      </p>
+      <p>
+         <strong>add-item__suggestion-control</strong> - [Element] Button
+         element for controlling next and previous items
+      </p>
+      <p>
+         <strong>add-item__suggestion-control-icon</strong> - [Element] next
+         previous button icon image
+      </p>
+      <p>
+         <strong>add-item__suggestion-control--prev</strong> - [Modifier]
+         previous button modifier
+      </p>
+      <p>
+         <strong>add-item__suggestion-control--next</strong> - [Modifier] next
+         button modifier
+      </p>
+      <p>
+         <strong>add-item__suggestion-chips</strong> - [Element] all chip
+         container
+      </p>
+      <p>
+         <strong>add-item__suggestion-chip-item</strong> - [Element] single chip
+         item
+      </p>
+      <p><br /></p>
+      <p>HTML Example</p>
+      <pre><code class="lang-html">&lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"add-item"</span>&gt;
+    ...
+    &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"add-item__suggestions"</span>&gt;
+        &lt;<span class="hljs-keyword">div</span>
+            <span class="hljs-built_in">class</span>=<span class="hljs-string">"add-item__suggestion-control add-item__suggestion-control--prev"</span>
+        &gt;
+            &lt;img
+                <span class="hljs-built_in">class</span>=<span class="hljs-string">"add-item__suggestion-control-icon"</span>
+                src=<span class="hljs-string">"src"</span>
+                alt=<span class="hljs-string">"alt"</span>
+            /&gt;
+        &lt;/<span class="hljs-keyword">div</span>&gt;
+        &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"add-item__suggestion-chips"</span>&gt;
+            &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"add-item__suggestion-chip-item"</span>&gt;Egg&lt;/<span class="hljs-keyword">div</span>&gt;
+            &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"add-item__suggestion-chip-item"</span>&gt;Carrot&lt;/<span class="hljs-keyword">div</span>&gt;
+        &lt;/<span class="hljs-keyword">div</span>&gt;
+        &lt;<span class="hljs-keyword">div</span>
+            <span class="hljs-built_in">class</span>=<span class="hljs-string">"add-item__suggestion-control add-item__suggestion-control--next"</span>
+        &gt;
+            &lt;img
+                <span class="hljs-built_in">class</span>=<span class="hljs-string">"add-item__suggestion-control-icon"</span>
+                src=<span class="hljs-string">"src"</span>
+                alt=<span class="hljs-string">"alt"</span>
+            /&gt;
+        &lt;/<span class="hljs-keyword">div</span>&gt;
+    &lt;/<span class="hljs-keyword">div</span>&gt;
+&lt;/<span class="hljs-keyword">div</span>&gt;
+</code></pre>
+      <p><br /></p>
+      <h3 id="table-block-elements-and-modifiers">
+         Table Block, Elements and Modifiers
+      </h3>
+      <hr />
+      <p>
+         <strong>table</strong> - [Block] Main table block, this will apply with
+         a section element
+      </p>
+      <p>
+         <strong>table--success</strong> - [Modifier] Success table, which will
+         be green
+      </p>
+      <p><strong>table__table</strong> - [Element] Main table element</p>
+      <p><strong>table__thead</strong> - [Element] table head element</p>
+      <p><strong>table__tbody</strong> - [Element] table body element</p>
+      <p>
+         <strong>table__item-input</strong> - [Element] first element with
+         checkbox and item name
+      </p>
+      <p><br /></p>
+      <p>HTML Example</p>
+      <pre><code class="lang-html">&lt;section <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"section table table--success"</span>&gt;
+    <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">table</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"table__table"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">thead</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"table__thead"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">thead</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">tbody</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"table__tbody"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">tbody</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">table</span>&gt;</span></span>
+&lt;<span class="hljs-regexp">/section&gt;</span>
+</code></pre>
+      <p><br /></p>
+      <h3 id="icon-button-block-elements-and-modifiers">
+         Icon Button Block, Elements and Modifiers
+      </h3>
+      <p>
+         <strong>icon-button</strong> - [Block] Icon button block, no text only
+         icon
+      </p>
+      <p>
+         <strong>icon-button__icon</strong> - [Element] Icon button icon image
+      </p>
+      <p><br /></p>
+      <h2 id="utility-classes">Utility Classes</h2>
+      <p><em>1 rem = 16px</em></p>
+      <p><strong>__margin</strong> - [Util] 0.5 rem all side</p>
+      <p><strong>__margin--md</strong> - [Modifier] 1 rem all side</p>
+      <p><strong>__margin--lg</strong> - [Modifier] 2 rem all side</p>
+      <p><strong>__margin--y</strong> - [Util] 0.5 rem top and bottom</p>
+      <p><strong>__margin--ymd</strong> - [Modifier] 1 rem top and bottom</p>
+      <p><strong>__margin--ylg</strong> - [Modifier] 2 rem top and bottom</p>
+      <p><strong>__margin--x</strong> - [Util] 0.5 rem left and right</p>
+      <p><strong>__margin--xmd</strong> - [Modifier] 1 rem left and right</p>
+      <p><strong>__margin--xlg</strong> - [Modifier] 2 rem left and right</p>
+      <p>
+         <strong>__shadow--lg</strong> - [Modifier]
+         <code>0 1px 10px 5px rgba(0, 0, 0, 0.25);</code>
+      </p>
+      <p>
+         <strong>__shadow--sm</strong> - [Modifier]
+         <code>0 0 3px 0 rgba(0, 0, 0, 0.1);</code>
+      </p>
+      <p>
+         <strong>horizontal-line</strong> - [Util] 1px border color horizontal
+         line, no margin no padding
+      </p>
+      <p><strong>show</strong> - [Util] <code>display: none</code></p>
+      <p><strong>hide</strong> - [Util] <code>display: block</code></p>
+      <p>
+         <strong>auto-grow-input</strong> - [Util] Automatically grow input
+         field, span element with contentEditable true and textbox role
+      </p>
+      <p><strong>align-left</strong> - [Util] Left align</p>
+      <p><strong>align-right</strong> - [Util] Right align</p>
+      <p><strong>text-secondary</strong> - [Util] Secondary text color</p>
+   </body>
+</html>
