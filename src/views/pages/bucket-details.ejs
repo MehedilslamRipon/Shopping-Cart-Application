@@ -1,0 +1,363 @@
+<%- include('../partials/head.ejs') %>
+
+<!-- navigation bar -->
+<%- include('../partials/navbar.ejs') %> 
+
+<!-- Main Page Content -->
+<main class="container __margin--ylg">
+   <!-- Add Item -->
+   <div class="section add-item __shadow--sm">
+      <div class="add-item__relative">
+         <div class="add-item__input">
+            <img
+               class="add-item__icon"
+               src="/assets/icons/plus-icon.png"
+               alt="Create New Bucket"
+            />
+            <input
+               class="add-item__input-field"
+               type="text"
+               placeholder="Create New Bucket"
+            />
+         </div>
+         <div class="add-item__filter-overlay hide">
+            <ul class="add-item__filter-list">
+               <li class="add-item__filter-item">
+                  <div class="add-item__filter-content">
+                     <img
+                        class="add-item__filter-icon"
+                        src="/assets/icons/plus-icon.png"
+                        alt="Item"
+                     />
+                     Egg
+                  </div>
+               </li>
+               <li class="add-item__filter-item">
+                  <div class="add-item__filter-content">
+                     <img
+                        class="add-item__filter-icon"
+                        src="/assets/icons/plus-icon.png"
+                        alt="Item"
+                     />
+                     Egg
+                  </div>
+               </li>
+               <li class="add-item__filter-item">
+                  <div class="add-item__filter-content">
+                     <img
+                        class="add-item__filter-icon"
+                        src="/assets/icons/plus-icon.png"
+                        alt="Item"
+                     />
+                     Egg
+                  </div>
+               </li>
+               <li class="add-item__filter-item">
+                  <div class="add-item__filter-content">
+                     <img
+                        class="add-item__filter-icon"
+                        src="/assets/icons/plus-icon.png"
+                        alt="Item"
+                     />
+                     Egg
+                  </div>
+               </li>
+               <li class="add-item__filter-item">
+                  <div class="add-item__filter-content">
+                     <img
+                        class="add-item__filter-icon"
+                        src="/assets/icons/plus-icon.png"
+                        alt="Item"
+                     />
+                     Egg
+                  </div>
+               </li>
+               <li class="add-item__filter-item">
+                  <div class="add-item__filter-content">
+                     <img
+                        class="add-item__filter-icon"
+                        src="/assets/icons/plus-icon.png"
+                        alt="Item"
+                     />
+                     Egg
+                  </div>
+               </li>
+               <li class="add-item__filter-item">
+                  <div class="add-item__filter-content">
+                     <img
+                        class="add-item__filter-icon"
+                        src="/assets/icons/plus-icon.png"
+                        alt="Item"
+                     />
+                     Egg
+                  </div>
+               </li>
+               <li class="add-item__filter-item">
+                  <div class="add-item__filter-content">
+                     <img
+                        class="add-item__filter-icon"
+                        src="/assets/icons/plus-icon.png"
+                        alt="Item"
+                     />
+                     Egg
+                  </div>
+               </li>
+            </ul>
+         </div>
+      </div>
+      <div class="horizontal-line"></div>
+      <div class="add-item__suggestions">
+         <div
+            class="add-item__suggestion-control add-item__suggestion-control--prev"
+         >
+            <img
+               class="add-item__suggestion-control-icon"
+               src="/assets/icons/left-arrow-icon.png"
+               alt="Previous"
+            />
+         </div>
+         <div class="add-item__suggestion-chips">
+            <div class="add-item__suggestion-chip-item">Egg</div>
+            <div class="add-item__suggestion-chip-item">Carrot</div>
+            <div class="add-item__suggestion-chip-item">Banana</div>
+            <div class="add-item__suggestion-chip-item">Apple</div>
+            <div class="add-item__suggestion-chip-item">Coke</div>
+            <div class="add-item__suggestion-chip-item">Water</div>
+            <div class="add-item__suggestion-chip-item">
+               Medicine
+            </div>
+            <div class="add-item__suggestion-chip-item">Milk</div>
+            <div class="add-item__suggestion-chip-item">Apple</div>
+            <div class="add-item__suggestion-chip-item">Coke</div>
+            <div class="add-item__suggestion-chip-item">Water</div>
+            <div class="add-item__suggestion-chip-item">
+               Medicine
+            </div>
+            <div class="add-item__suggestion-chip-item">Apple</div>
+            <div class="add-item__suggestion-chip-item">Coke</div>
+            <div class="add-item__suggestion-chip-item">Water</div>
+            <div class="add-item__suggestion-chip-item">
+               Medicine
+            </div>
+            <div class="add-item__suggestion-chip-item">Milk</div>
+         </div>
+         <div
+            class="add-item__suggestion-control add-item__suggestion-control--next"
+         >
+            <img
+               class="add-item__suggestion-control-icon"
+               src="/assets/icons/right-arrow-icon.png"
+               alt="Next"
+            />
+         </div>
+      </div>
+   </div>
+
+   <!-- Item Table -->
+   <section class="section table __shadow--sm">
+      <table class="table__table">
+         <thead class="table__thead">
+            <tr>
+               <th>Item Name</th>
+               <th>Quantity</th>
+               <th>Cost</th>
+               <th class="align-right">Actions</th>
+            </tr>
+         </thead>
+         <tbody class="table__tbody">
+            <tr>
+               <th>
+                  <div class="table__item-name">
+                     <input type="checkbox" />
+                     <label>Carrots</label>
+                  </div>
+               </th>
+               <th>
+                  <div class="table__item-input">
+                     <span
+                        class="auto-grow-input"
+                        role="textbox"
+                        aria-placeholder="500G"
+                        contenteditable
+                        >2KG
+                     </span>
+                  </div>
+               </th>
+               <th>
+                  <div class="table__item-input">
+                     <span
+                        class="auto-grow-input"
+                        role="textbox"
+                        contenteditable
+                     >
+                        250
+                     </span>
+                     <span>BDT</span>
+                  </div>
+               </th>
+               <th class="align-right">
+                  <button class="icon-button icon-button--custom">
+                     <img
+                        class="icon-button__icon"
+                        src="/assets/icons/delete-icon.png"
+                        alt="Delete"
+                     />
+                  </button>
+               </th>
+            </tr>
+         </tbody>
+      </table>
+   </section>
+
+   <section class="section table table--success __shadow--sm">
+      <table class="table__table">
+         <thead class="table__thead">
+            <tr>
+               <th>Item Name</th>
+               <th>Quantity</th>
+               <th>Cost</th>
+               <th class="align-right">
+                  <button class="icon-button">
+                     <img
+                        class="icon-button__icon"
+                        src="/assets/icons/printer-white-icon2.png"
+                        alt="Print"
+                     />
+                  </button>
+                  <button class="icon-button">
+                     <img
+                        class="icon-button__icon"
+                        src="/assets/icons/down-arrow-white-icon.png"
+                        alt="Print"
+                     />
+                  </button>
+               </th>
+            </tr>
+         </thead>
+         <tbody class="table__tbody">
+            <tr>
+               <th>
+                  <div class="table__item-name">
+                     <input type="checkbox" />
+                     <label>Carrots</label>
+                  </div>
+               </th>
+               <th>
+                  <div class="table__item-input">
+                     <span
+                        class="auto-grow-input"
+                        role="textbox"
+                        aria-placeholder="500G"
+                        contenteditable
+                        >2KG
+                     </span>
+                  </div>
+               </th>
+               <th>
+                  <div class="table__item-input">
+                     <span
+                        class="auto-grow-input"
+                        role="textbox"
+                        contenteditable
+                     >
+                        250
+                     </span>
+                     <span>BDT</span>
+                  </div>
+               </th>
+               <th class="align-right">
+                  <button class="icon-button">
+                     <img
+                        class="icon-button__icon"
+                        src="/assets/icons/delete-icon.png"
+                        alt="Delete"
+                     />
+                  </button>
+               </th>
+            </tr>
+            <tr>
+               <th>
+                  <div class="table__item-name">
+                     <input type="checkbox" />
+                     <label>Carrots</label>
+                  </div>
+               </th>
+               <th>
+                  <div class="table__item-input">
+                     <span
+                        class="auto-grow-input"
+                        role="textbox"
+                        aria-placeholder="500G"
+                        contenteditable
+                        >2KG
+                     </span>
+                  </div>
+               </th>
+               <th>
+                  <div class="table__item-input">
+                     <span
+                        class="auto-grow-input"
+                        role="textbox"
+                        contenteditable
+                     >
+                        250
+                     </span>
+                     <span>BDT</span>
+                  </div>
+               </th>
+               <th class="align-right">
+                  <button class="icon-button">
+                     <img
+                        class="icon-button__icon"
+                        src="/assets/icons/delete-icon.png"
+                        alt="Delete"
+                     />
+                  </button>
+               </th>
+            </tr>
+            <tr>
+               <th>
+                  <div class="table__item-name">
+                     <input type="checkbox" />
+                     <label>Carrots</label>
+                  </div>
+               </th>
+               <th>
+                  <div class="table__item-input">
+                     <span
+                        class="auto-grow-input"
+                        role="textbox"
+                        aria-placeholder="500G"
+                        contenteditable
+                        >2KG
+                     </span>
+                  </div>
+               </th>
+               <th>
+                  <div class="table__item-input">
+                     <span
+                        class="auto-grow-input"
+                        role="textbox"
+                        contenteditable
+                     >
+                        250
+                     </span>
+                     <span>BDT</span>
+                  </div>
+               </th>
+               <th class="align-right">
+                  <button class="icon-button">
+                     <img
+                        class="icon-button__icon"
+                        src="/assets/icons/delete-icon.png"
+                        alt="Delete"
+                     />
+                  </button>
+               </th>
+            </tr>
+         </tbody>
+      </table>
+   </section>
+</main>
+</body>
+</html>
